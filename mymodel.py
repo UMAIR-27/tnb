@@ -35,7 +35,7 @@ model = pickle.load(open("LRmodel.pkl", "rb"))
 
 new_data={'Fan':[fan], 'Refrigerator':[fridge],'AirConditioner':[aircon],'Television':[tv],'MonthlyHours':[hour]}
 
-pd.Dataframe.from_dict(new_data)
+pd.DataFrame.from_dict(new_data)
 
 pred = model.predict(pd.DataFrame.from_dict(new_data))
 
